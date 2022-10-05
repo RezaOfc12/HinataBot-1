@@ -37,13 +37,22 @@ let pp = await conn.profilePictureUrl(who).catch(_ => hwaifu.getRandom())
      let lin_ = ["https://www.youtube.com","https://www.instagram.com","https://www.facebook.com"]
      let cap = `*${htki} Information ${htka}*
 
-*🏷️ Nama:* ${name}
-*💲 Money:* *RP* ${money}
-*🏆 Level* ${level}
-*🎋 Role:* ${role}
-*🧬 XP:* TOTAL ${exp} (${exp - min} / ${xp}) [${math <= 0 ? `Siap untuk *${usedPrefix}levelup*` : `${math} XP lagi untuk levelup`}]
-*📨 Terdaftar:* ${registered ? 'Ya (' + new Date(regTime).toLocaleString() + ')' : 'Tidak'} ${lastclaim > 0 ? '\n*⏱️Terakhir Klaim:* ' + new Date(lastclaim).toLocaleString() : ''}\n\n Ketik *${usedPrefix}inv* untuk melihat Inventory RPG
-${cmenua}`
+_HAI KAK ${conn.getName(m.sender)}_ （＾ω＾）
+*Saya adalah bot yang di beri nama EzaBot-MD*
+*Saya di kembangkan oleh seseorang yang bernama RezaOfc*
+
+╭══════════ ⳹❋ཻུ۪۪⸙ 
+║ *YOUR PROFILE*
+╰══════════ ⳹❋ཻུ۪۪⸙ 
+*⫹⫺ Nama:* @${who.split("@")[0]} 
+*⫹⫺ Money:* *RP* ${money}
+*⫹⫺ Level:* ${level}
+*⫹⫺ Role:* ${role}
+*⫹⫺ Terdaftar:* ${registered ? 'Ya (' + new Date(regTime).toLocaleString() + ')' : 'Tidak'} ${lastclaim > 0 ? '\n*⏱️Terakhir Klaim:* ' + new Date(lastclaim).toLocaleString() : ''}\n\n ───────── 
+*Gc Bot* :_*https://bit.ly/3dEn6vF*_
+*Ig Owner* :_*https://bit.ly/3R3n6nd*_
+*WhatsApp* :_*@0*_
+ ─────────`
 
 let weem = `📮 *Note:* Jika menemukan bug, error atau kesulitan dalam penggunaan silahkan laporkan/tanyakan kepada Owner`
     let pusat = ["ke1", "ke2", "ke3", "ke4", "ke5", "ke6", "ke7", "ke8", "ke9"]
